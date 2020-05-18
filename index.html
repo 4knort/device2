@@ -194,7 +194,7 @@
       <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
       <a class="mini-map" href="">
-        <img src="" alt="mini-map">
+        <img src="" width="" height="" alt="mini-map">
       </a>
       <a class="write-us button" href="">Напишите нам</a>
     </section>
@@ -239,5 +239,31 @@
       <b class="logo-html"></b>
     </div>
   </footer>
+
+  <section class="modal-write-us modal">
+    <h2 class="modal-title visually-hidden">Напишите нам</h2>
+    <form class="modal-form" action="index.html" method="post">
+        <div class="name">
+          <label class="label-modal" for="name">Ваше имя:</label>
+          <input class="input-modal" id="name" type="text" placeholder="Имя Фамилия">
+        </div>
+        <div class="email">
+          <label class="label-modal" for="email">Ваш e-mail:</label>
+          <input class="input-modal" id="email" type="text" placeholder="email@example.com">
+        </div>
+        <div class="message">
+          <span class="label-modal">Текст письма:</span>
+          <textarea class="input-modal" name="text" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="modal-form-button button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+
+  <section class="modal-map modal">
+    <h2 class="modal-title visually-hidden">Карта проезда</h2>
+    <img class="big-map" src="" width="" height="" alt="г. Москва, ул. Строителей, 15">
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
 </body>
 </html>
