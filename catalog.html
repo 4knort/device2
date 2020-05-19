@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Device-Catalog</title>
+</head>
+
+<body>
+  <header class="main-header">
+      <h1 class="header-title logo">Device</h1>
+      <div class="row-top">
+        <form class="search-form" action="index.html" method="post">
+          <label for="site-nav-search"><span class="visually-hidden">Поиск по сайту</span></label>
+          <input id="site-nav-search" type="text" placeholder="Поиск по сайту">
+          <button class="search-form-button" type="submit">Найти</button>
+        </form>
+        <div class="user-nav">
+          <div class="user-unauthorized">
+            <a class="login" href="#">Войти</a>
+          </div>
+          <div class="user-authorized">
+            <span>Валентин Петухов</span>
+            <a class="logout" href="#">Выйти</a>
+          </div>
+        </div>
+        <a class="compare" href="">Сравнить</a>
+        <a class="cart" href="">Корзина</a>
+      </div>
+
+      <div class="row-bottom">
+        <nav class="catalog-menu">
+          <h2 class="catalog-title">Каталог товаров</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item"><a href="">Виртуальная реальность</a></li>
+            <li class="catalog-item"><a href="">Моноподы для селфи</a></li>
+            <li class="catalog-item"><a href="">Экшн-камеры</a></li>
+            <li class="catalog-item"><a href="">Фитнес-браслеты</a></li>
+            <li class="catalog-item"><a href="">Умные часы</a></li>
+            <li class="catalog-item"><a href="">Квадрокоптеры</a></li>
+          </ul>
+        </nav>
+        <a class="delivery" href="">Доставка</a>
+        <a class="guarantee" href="">Гарантия</a>
+        <a class="contacts" href="">Контакты</a>
+      </div>
+  </header>
+
+  <main class="inner-page">
+    <h2 class="monopods-title">Моноподы для селфи</h2>
+    <ul class="breadcrumbs">
+      <li>Главная</li>
+      <li>Каталог товаров</li>
+      <li>Моноподы для селфи</li>
+    </ul>
+
+    <aside class="filter-sidebar">
+      <h3 class="filter-title">Фильтр:</h3>
+      <form class="filter" method="get" action="">
+        <div class="filter-item price">
+          <h3 class="price-title">Стоимость</h3>
+          <div class="filter-range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <span class="price-min">от 0</span>
+              <span class="price-max">до 5000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-item color">
+          <h3 class="color-title">Цвет</h3>
+          <ul class="color-list">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input  filter-input-checkbox"
+               id="black" name="color" value="black" type="checkbox" checked>
+              <label for="black">Чёрный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input  filter-input-checkbox"
+               id="white" name="color" value="white" type="checkbox">
+              <label for="white">Белый</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input  filter-input-checkbox"
+               id="blue" name="color" value="blue" type="checkbox" checked>
+              <label for="blue">Синий</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input  filter-input-checkbox"
+               id="red" name="color" value="red" type="checkbox" checked>
+              <label for="red">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input  filter-input-checkbox"
+               id="pink" name="color" value="pink" type="checkbox">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter-item bluetooth">
+          <h3 class="bluetooth-title">Bluetooth</h3>
+          <ul class="bluetooth-list">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio"
+               id="yes" name="bluetooth" value="yes" type="radio" checked>
+              <label for="yes">Есть</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio"
+               id="no" name="bluetooth" value="no" type="radio">
+              <label for="no">Нет</label>
+            </li>
+          </ul>
+        </div>
+
+        <button class="filter-button button" type="submit">Показать</button>
+      </form>
+    </aside>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="row-top">
+      <h2 class="footer-title logo">Device</h2>
+      <div class="user-nav">
+        <div class="user-unauthorized">
+          <a class="login" href="#">Войти</a>
+        </div>
+        <div class="user-authorized">
+          <span>Валентин Петухов</span>
+          <a class="logout" href="#">Выйти</a>
+        </div>
+      </div>
+      <a class="compare" href="">Сравнить</a>
+      <a class="cart" href="">Корзина</a>
+    </div>
+
+    <div class="row-middle">
+      <p class="adress">г. Москва, ул. Строителей, 15</p>
+      <a class="delivery" href="">Доставка</a>
+      <a class="guarantee" href="">Гарантия</a>
+      <a class="contacts" href="">Контакты</a>
+      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+    </div>
+
+    <div class="row-bottom">
+      <ul class="footer-social">
+        <li class="social-button">
+          <a href=""><span class="visually-hidden">Фэйсбук</span></a>
+        </li>
+        <li class="social-button">
+          <a href=""><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li class="social-button">
+          <a href=""><span class="visually-hidden">Твитер</span></a>
+        </li>
+      </ul>
+      <b class="logo-html"></b>
+    </div>
+  </footer>
+</body>
+</html>
