@@ -73,7 +73,12 @@ a {
 
 .catalog-menu .catalog-list {
   line-height: 36px;
+  list-style: none;
   text-transform: none;
+}
+
+.slide-list {
+  list-style: none;
 }
 
 .offer-slide .number {
@@ -101,6 +106,25 @@ a {
   line-height: 20px;
 }
 
+.catalog-popular .catalog-list {
+  list-style: none;
+}
+
 .catalog-popular .catalog-item a {
   color: #000000;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.delivery-title,
+.guarantee-title,
+.credit-title {
+  font-size: 47px;
+  line-height: 56px;
 }
