@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/opensanslight.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(../fonts/gilroylight.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url(../fonts/gilroyextrabold.woff2) format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy Extra Bold", Arial sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.different-font {
+  font-family: "Open Sans Light", Arial sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.button {
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f0c52e;
+  border: none;
+}
+
+.logo {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-footer .logo {
+  color: #ffc600;
+}
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.main-header a {
+  color: #000000;
+}
+
+.row-bottom h2{
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.catalog-list {
+  line-height: 36px;
+  text-transform: none;
+}
