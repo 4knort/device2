@@ -58,8 +58,8 @@
     <aside class="filter-sidebar">
       <h3 class="filter-title">Фильтр:</h3>
       <form class="filter" method="get" action="">
-        <div class="filter-item price">
-          <h3 class="price-title">Стоимость</h3>
+        <fieldset class="filter-item price">
+          <legend class="price-title">Стоимость</legend>
           <div class="filter-range">
             <div class="range-controls">
               <div class="scale">
@@ -73,10 +73,10 @@
               <span class="price-max">до 5000</span>
             </div>
           </div>
-        </div>
+        </fieldset>
 
-        <div class="filter-item color">
-          <h3 class="color-title">Цвет</h3>
+        <fieldset class="filter-item color">
+          <legend class="color-title">Цвет</legend>
           <ul class="color-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input  filter-input-checkbox"
@@ -104,10 +104,10 @@
               <label for="pink">Розовый</label>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
-        <div class="filter-item bluetooth">
-          <h3 class="bluetooth-title">Bluetooth</h3>
+        <fieldset class="filter-item bluetooth">
+          <legend class="bluetooth-title">Bluetooth</legend>
           <ul class="bluetooth-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio"
@@ -120,7 +120,7 @@
               <label for="no">Нет</label>
             </li>
           </ul>
-        </div>
+        </fieldset>
 
         <button class="filter-button button" type="submit">Показать</button>
       </form>
