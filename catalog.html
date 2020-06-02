@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Device-Catalog</title>
+  <link rel="stylesheet" href="normalize/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
       <a class="header-title logo" href="">Device</a>
-      <div class="row-top">
+      <div class="row-top different-font">
         <form class="search-form" action="index.html" method="post">
           <label for="site-nav-search"><span class="visually-hidden">Поиск по сайту</span></label>
           <input id="site-nav-search" type="text" placeholder="Поиск по сайту">
@@ -31,8 +33,9 @@
 
       <div class="row-bottom">
         <nav class="catalog-menu">
-          <h2 class="catalog-title">Каталог товаров</h2>
-          <ul class="catalog-list">
+          <h2 class="catalog-title uppercase">Каталог товаров</h2>
+          <div class="plus"><span class="visually-hidden">Развернуть</span></div>
+          <ul class="catalog-list different-font">
             <li class="catalog-item"><a href="">Виртуальная реальность</a></li>
             <li class="catalog-item"><a href="">Моноподы для селфи</a></li>
             <li class="catalog-item"><a href="">Экшн-камеры</a></li>
@@ -41,15 +44,15 @@
             <li class="catalog-item"><a href="">Квадрокоптеры</a></li>
           </ul>
         </nav>
-        <a class="delivery" href="">Доставка</a>
-        <a class="guarantee" href="">Гарантия</a>
-        <a class="contacts" href="">Контакты</a>
+        <a class="delivery uppercase" href="">Доставка</a>
+        <a class="guarantee uppercase" href="">Гарантия</a>
+        <a class="contacts uppercase" href="">Контакты</a>
       </div>
   </header>
 
   <main class="inner-page">
     <h2 class="monopods-title">Моноподы для селфи</h2>
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs different-font">
       <li>Главная</li>
       <li>Каталог товаров</li>
       <li>Моноподы для селфи</li>
@@ -128,8 +131,8 @@
 
     <div class="sorting">
       <h3 class="sorting-title">Сотрировка:</h3>
-      <div class="sorting-list">
-        <span class="sort-item">По цене</span>
+      <div class="sorting-list different-font">
+        <span class="sort-item active">По цене</span>
         <span class="sort-item">По типу</span>
         <span class="sort-item">По популярности</span>
       </div>
@@ -187,19 +190,19 @@
       </div>
 
       <ul class="pagination-list">
-        <li><a class="pagination-button back disabled" href="#">Назад</a></li>
-        <li><a class="pagination-button current" href="#">1</a></li>
-        <li><a class="pagination-button" href="#">2</a></li>
-        <li><a class="pagination-button" href="#">3</a></li>
-        <li><a class="pagination-button forward" href="#">Вперёд</a></li>
+        <li class="pagination-button back disabled"><a href="#">Назад</a></li>
+        <li class="pagination-button current"><a href="#">1</a></li>
+        <li class="pagination-button"><a href="#">2</a></li>
+        <li class="pagination-button"><a href="#">3</a></li>
+        <li class="pagination-button forward"><a href="#">Вперёд</a></li>
       </ul>
     </div>
   </main>
 
   <footer class="main-footer">
-    <div class="row-top">
-      <a class="footer-title logo" href="">Device</a>
-      <div class="user-nav">
+    <a class="footer-title logo" href="">Device</a>
+    <div class="row-top different-font">
+      <div class="user-nav ">
         <div class="user-unauthorized">
           <a class="login" href="#">Войти</a>
         </div>
@@ -213,11 +216,11 @@
     </div>
 
     <div class="row-middle">
-      <p class="adress">г. Москва, ул. Строителей, 15</p>
-      <a class="delivery" href="">Доставка</a>
-      <a class="guarantee" href="">Гарантия</a>
-      <a class="contacts" href="">Контакты</a>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+      <p class="adress different-font">г. Москва, ул. Строителей, 15</p>
+      <a class="delivery uppercase" href="">Доставка</a>
+      <a class="guarantee uppercase" href="">Гарантия</a>
+      <a class="contacts uppercase" href="">Контакты</a>
+      <p class="phone different-font">Тел.: +7 (495) 495-95-95</p>
     </div>
 
     <div class="row-bottom">
