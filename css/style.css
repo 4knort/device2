@@ -29,7 +29,8 @@ a {
   text-decoration: none;
 }
 
-.different-font {
+.different-font,
+.in-compare {
   font-family: "Open Sans Light", Arial sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -70,6 +71,11 @@ a {
   color: #000000;
 }
 
+.search-form-button {
+  background-color: transparent;
+  border: none;
+}
+
 .catalog-menu .catalog-list {
   line-height: 36px;
   list-style: none;
@@ -94,7 +100,9 @@ a {
   color: #464646;
 }
 
-.parameters-data {
+.parameters-data,
+.price-controls,
+.product-price {
   font-family: "Gilroy Light", Arial sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -135,7 +143,8 @@ a {
 }
 
 .info-title,
-.contacts-title {
+.contacts-title,
+.monopods-title {
   font-size: 47px;
   line-height: 48px;
 }
@@ -191,4 +200,79 @@ a {
   background-color: #f0c52e;
   border: none;
   opacity: 0.5;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 24px;
+  list-style: none;
+  opacity: 0.3;
+}
+
+.filter-sidebar {
+  background-color: #efefef;
+}
+
+.filter-title,
+.sorting-title {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sorting-list {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.sort-button {
+  border: none;
+}
+
+.filter-title {
+  background-color: #dcdcdc;
+}
+
+.price-title,
+.color-title,
+.bluetooth-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.color-list,
+.bluetooth-list {
+  list-style: none;
+}
+
+.price-controls {
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.2;
+}
+
+.product-image {
+  background-color: #efefef;
+}
+
+.in-compare {
+  font-size: 13px;
+  line-height: 36px;
+  opacity: 0.5;
+}
+
+.product-price {
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-button a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
