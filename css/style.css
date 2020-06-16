@@ -30,16 +30,39 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.different-font,
-.in-compare {
+.font-opensanslight {
   font-family: "Open Sans Light", Arial sans-serif;
   font-size: 15px;
   line-height: 30px;
+}
+
+.font-gilroylight {
+  font-family: "Gilroy Light", Arial sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .uppercase {
@@ -50,6 +73,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   font: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -233,10 +257,7 @@ a {
   color: #464646;
 }
 
-.parameters-data,
-.price-controls,
-.product-price {
-  font-family: "Gilroy Light", Arial sans-serif;
+.parameters-data {
   font-size: 36px;
   line-height: 48px;
 }
@@ -244,6 +265,10 @@ a {
 .parameters-description {
   font-size: 13px;
   line-height: 20px;
+}
+
+.catalog-popular {
+  margin-bottom: 180px;
 }
 
 .catalog-popular .catalog-list {
@@ -310,18 +335,68 @@ a {
 }
 
 .services {
+  position: relative;
   background-color: #e5e5e5;
 }
 
+.services .container {
+  position: relative;
+  top: -20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-list {
+  display: flex;
+  flex-direction: column;
+  width: 277px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.delivery-title,
-.guarantee-title,
-.credit-title {
+.services-list li {
+  padding: 8px 0;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.services-list .active {
+  width: 277px;
+  color: #f7e184;
+
+  background-color: #000000;
+}
+
+.services .line {
+  position: relative;
+  top: -80px;
+  width: 7px;
+  height: 320px;
+  margin-right: auto;
+
+  background-color: #000000;
+}
+
+.services-item {
+  display: none;
+}
+
+.services-item.current {
+  display: block;
+  width: 760px;
+}
+
+.services-item h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
   font-size: 47px;
   line-height: 56px;
+}
+
+.services-item p {
+  margin: 0;
 }
 
 .logotypes-list {
