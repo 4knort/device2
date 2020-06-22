@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin-top: 40px;
-  padding: 43px 57px 33px 60px;
+  padding: 43px 57px 30px 60px;
 
   background-color: rgba(240, 197, 46, 0.5);();
 }
@@ -620,4 +620,39 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+}
+
+/* стили для catalog */
+
+.inner-page .user-authorized,
+.inner-page .user-authorized {
+  display: block;
+}
+
+.inner-page .user-unauthorized,
+.inner-page .user-unauthorized {
+  display: none;
+}
+
+.inner-page .row-bottom {
+  min-height: 0;
+}
+
+.inner-wrapper {
+  display: flex;
+}
+
+.inner-page .filter-sidebar {
+  width: 328px;
+  margin-right: 72px;
+}
+
+.inner-page .products-wrapper {
+  width: 760px;
+}
+
+.inner-page .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
